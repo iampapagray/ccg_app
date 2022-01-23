@@ -8,14 +8,7 @@
       </a>
       <div class="mt-8 bg-white overflow-hidden shadow sm:rounded-lg p-6">
         
-        <button class="btn">
-          Buy on XCP
-        </button>
-        <button class="outline-btn">
-          <div class="outline-btn-text">
-              Buy on Opensea
-          </div>
-        </button>
+        
         <p class="mt-3 text-gray-600">
           We recommend you take a look at the <a href="https://nuxtjs.org" target="_blank" class="text-green-500 hover:underline">Nuxt documentation</a>, whether you are new or have previous experience with the framework.<br>
         </p>
