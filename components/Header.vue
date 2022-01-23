@@ -17,10 +17,30 @@
                                 v-for="social in socials"
                                 :key="social.url"
                                 :src="social.img" 
-                                class="cursor-pointer" >
+                                class="cursor-pointer mr-2.5 last-of-type:mr-0" />
                         </div>
                     </div>
-                    <div></div>
+                    <div class="flex items-center">
+                        <div class="flex">
+                            <a
+                                v-for="(nav) in navs"
+                                :key="nav.title"
+                                class=" text-sm leading-4 mr-nav-side  font-mont font-semibold text-white focus:outline-none"
+                            >
+                                {{nav.title}}
+                            </a>
+                        </div>
+                        <div class="flex">
+                            <button class="btn mr-2.5">
+                                Buy on XCP
+                            </button>
+                            <button class="outline-btn">
+                                <div class="outline-btn-text">
+                                    Buy on Opensea
+                                </div>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             <!-- </div> -->
 
@@ -46,12 +66,11 @@ export default {
             // menu: require('@/assets/images/menu.svg'),
             // menu_close: require('@/assets/images/menu_close.svg'),
             // isLoggedIn: false,
-            // navs: [
-            //     {title: "Home", url:"#", active: true},
-            //     {title: "Staking", url:"#", active: false},
-            //     {title: "Docs", url:"#", active: false},
-            //     {title: "Support", url:"#", active: false},
-            // ]
+            navs: [
+                {title: "Home", url:"#", active: false},
+                {title: "About", url:"#", active: false},
+                {title: "FAQ", url:"#", active: false},
+            ]
         }
     },
     methods: {

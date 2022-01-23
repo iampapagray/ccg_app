@@ -1,5 +1,5 @@
 module.exports = {
-  important: true,
+  //   important: true,
   purge: [
     './components/**/*.{vue,js}',
     './layouts/**/*.vue',
@@ -30,6 +30,7 @@ module.exports = {
       },
       spacing: {
         'btn-side': '1.563rem',
+        'nav-side': '1.875rem',
         15: '3.75rem',
         25: '6.25rem',
       },
