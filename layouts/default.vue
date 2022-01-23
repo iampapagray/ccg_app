@@ -1,8 +1,8 @@
 <template>
-    <div >
+    <div class="flex flex-col h-screen">
         <Header :is-open="isOpen" @doToggle="toggle" />
          
-        <Nuxt class="transform ease-in-out transition-all duration-300 h-body md:h-body-m lg:h-body"  :class="isOpen ? '-translate-x-80' : 'translate-x-0'" />
+        <Nuxt class="transform ease-in-out transition-all duration-300 "  :class="isOpen ? '-translate-x-80' : 'translate-x-0'" />
 
     </div>
 </template>

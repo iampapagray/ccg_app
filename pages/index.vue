@@ -1,5 +1,9 @@
 <template>
-  <Tutorial/>
+<div class="">
+  <Hero />
+
+  <!-- <Tutorial /> -->
+</div>
 </template>
 
 <script>

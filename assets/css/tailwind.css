@@ -48,4 +48,8 @@
     .outline-btn-text{
         @apply bg-clip-text text-transparent bg-gradient-to-r from-light-orange to-dark-orange text-sm
     }
+
+    .video-box {
+        height: calc(100vh - theme('height.25'));
+    }
 } 
