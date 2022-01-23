@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+
+@font-face {
+    font-family: "GT-America";
+    src: local('GT-America'), url("../fonts/GT-America-Regular.otf") format("opentype") ;
+}
+@font-face {
+    font-family: "GT-America";
+    src: local('GT-America'), url("../fonts/GT-America-Bold.otf") format("opentype") ;
+    font-weight: bold;
+}
+@font-face {
+    font-family: "GT-America";
+    src: local('GT-America'), url("../fonts/GT-America-Bold-Italic.otf") format("opentype") ;
+    font-weight: bold;
+    font-style: italic;
+}
+
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-darkgray
+    }
+
+    .btn {
+        @apply h-10 px-btn-side bg-gradient-to-r from-light-orange to-dark-orange text-black rounded-md font-mont font-semibold text-sm leading-btn focus:outline-none;
+    }
+    .outline-btn {
+        @apply h-10 px-btn-side border-gradient-r-yellow-orange-black gradient-border-2 text-transparent rounded-md font-mont font-semibold text-sm leading-btn focus:outline-none;
+    }
+    .outline-btn-text{
+        @apply bg-clip-text text-transparent bg-gradient-to-r from-light-orange to-dark-orange text-sm
+    }
+} 
