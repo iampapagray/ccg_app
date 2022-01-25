@@ -18,3 +18,7 @@
 .plyr--audio .plyr__controls {
     background-color: #ebf4f1;
 }
+
+.video-box .video-wrapper{
+    height: inherit !important;
+}

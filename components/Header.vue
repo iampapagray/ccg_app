@@ -67,7 +67,7 @@ export default {
             // menu_close: require('@/assets/images/menu_close.svg'),
             // isLoggedIn: false,
             navs: [
-                {title: "Homee", url:"#", active: false},
+                {title: "Home", url:"#", active: false},
                 {title: "About", url:"#", active: false},
                 {title: "FAQ", url:"#", active: false},
             ]
