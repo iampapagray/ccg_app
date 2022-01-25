@@ -56,4 +56,7 @@
     .video-box {
         height: calc(100vh - theme('height.25'));
     }
+    .tweet-container {
+        width: calc(100% - theme('spacing.29') - theme('spacing.29'));
+    }
 } 

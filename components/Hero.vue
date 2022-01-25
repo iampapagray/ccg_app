@@ -36,6 +36,7 @@ export default {
         return {
             poster: require('@/assets/images/poster.jpeg'),
             backvid: require('@/assets/images/background.mp4'),
+           
         }
     },
     mounted() {

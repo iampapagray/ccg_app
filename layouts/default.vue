@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col h-screen">
-        <Header :is-open="isOpen" @doToggle="toggle" />
+        <Header class="sticky top-0 z-50" :is-open="isOpen" @doToggle="toggle" />
          
         <Nuxt class="transform ease-in-out transition-all duration-300 "  :class="isOpen ? '-translate-x-80' : 'translate-x-0'" />
 

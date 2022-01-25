@@ -1,9 +1,9 @@
 <template>
-    <div class="lg:px-29 py-10 max-w flex justify-between bg-black">
+    <div class="lg:px-29 max-w flex justify-between bg-black">
         <div 
             v-for="tweet in tweets"
             :key="tweet.message"
-            class="lg:h-41 lg:w-82 bg-darkgray rounded lg:px-tweetside"
+            class="lg:h-41 lg:w-82 bg-darkgray rounded lg:px-tweetside mt-17 mb-16"
         >
             <div class="flex justify-between align-top max-w pt-4">
                 <div class="flex ">
@@ -60,6 +60,13 @@
                 <p>{{tweet.device}}</p>
             </div>
         </div>
+        <div class="absolute tweet-container top-girl">
+            <img
+                class="mx-auto"
+                :src="cryptogirl"
+                alt="crypto girl"
+            />
+        </div>
     </div>
 </template>
 
@@ -91,7 +98,8 @@ export default {
             ],
             ellipsis: require('@/assets/images/ellipsis.svg'),
             dot: require('@/assets/images/dot.svg'),
-            verified: require('@/assets/images/verified.svg')
+            verified: require('@/assets/images/verified.svg'),
+            cryptogirl: require('@/assets/images/cryptogirl.svg'),
         }
     }
 }
