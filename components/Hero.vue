@@ -15,7 +15,7 @@
          <video-background 
             :src="backvid"
             :poster="poster"
-            class="h-full"
+            class="video-box"
             overlay="linear-gradient(45deg,#2a4ae430,#fb949e6b)" 
         >
             <!-- <h1 style="color: white;">Hallo!</h1> -->
