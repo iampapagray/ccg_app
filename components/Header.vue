@@ -6,7 +6,7 @@
                     <div class="flex items-center">
                         <div class="flex-shrink-0">
                             <img
-                                class="lg:h-logo lg:w-40"
+                                class="lg:h-logo lg:w-logo-w"
                                 :src="logo"
                                 alt="CCGBTCONE Logo"
                             >

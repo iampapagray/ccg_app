@@ -36,7 +36,11 @@
 
 @layer base {
     body {
-        @apply bg-darkgray
+        @apply bg-darkgray 
+    }
+
+    p{
+        @apply p-0
     }
 
     .btn {

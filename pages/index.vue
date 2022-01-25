@@ -2,7 +2,8 @@
 <div class="">
   <Hero />
 
-  <!-- <Tutorial /> -->
+  <Tweets />
+
 </div>
 </template>
 
