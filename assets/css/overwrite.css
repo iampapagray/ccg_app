@@ -19,6 +19,8 @@
     background-color: #ebf4f1;
 }
 
-.video-box .video-wrapper{
+.video-box .video-wrapper,
+.video-box .video-buffering, 
+.video-box .video-overlay{
     height: inherit !important;
 }
