@@ -24,3 +24,7 @@
 .video-box .video-overlay{
     height: inherit !important;
 }
+
+.tns-outer button:first-child, .tns-outer .tns-liveregion{
+    display: none !important;
+}

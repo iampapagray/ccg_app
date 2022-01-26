@@ -1,9 +1,10 @@
 <template>
     <div class="lg:px-29 max-w flex justify-between bg-black">
         <div 
-            v-for="tweet in tweets"
+            v-for="(tweet, i) in tweets"
             :key="tweet.message"
             class="lg:h-41 lg:w-82 bg-darkgray rounded lg:px-tweetside mt-17 mb-16"
+            :class="[i==1,'lg:pl-tweetside2 lg:pr-tweetside']"
         >
             <div class="flex justify-between align-top max-w pt-4">
                 <div class="flex ">
@@ -60,7 +61,7 @@
                 <p>{{tweet.device}}</p>
             </div>
         </div>
-        <div class="absolute tweet-container top-girl">
+        <div class="absolute tweet-container girl-position ">
             <img
                 class="mx-auto"
                 :src="cryptogirl"

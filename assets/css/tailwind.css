@@ -59,4 +59,7 @@
     .tweet-container {
         width: calc(100% - theme('spacing.29') - theme('spacing.29'));
     }
+    .girl-position{
+        top: calc(100vh - theme('height.25') - 7.188rem);
+    }
 } 

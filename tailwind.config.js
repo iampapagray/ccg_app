@@ -42,6 +42,7 @@ module.exports = {
         41: '10.375rem',
         82: '22.813rem',
         tweetside: '1.875rem',
+        tweetside2: '2.125rem',
         nmside: '0.438rem',
         girl: '30rem',
       },
