@@ -2,7 +2,7 @@
     <div class="flex flex-col h-screen">
         <Header class="sticky top-0 z-50" :is-open="isOpen" @doToggle="toggle" />
          
-        <Nuxt class="transform ease-in-out transition-all duration-300 "  :class="isOpen ? '-translate-x-80' : 'translate-x-0'" />
+        <Nuxt class="transform ease-in-out transition-all duration-300 relative"  :class="isOpen ? '-translate-x-80' : 'translate-x-0'" />
 
     </div>
 </template>
