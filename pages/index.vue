@@ -3,6 +3,7 @@
   <Hero />
   <Tweets />
   <Slider />
+  <Content />
 
 </div>
 </template>

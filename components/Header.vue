@@ -32,11 +32,11 @@
                         </div>
                         <div class="flex">
                             <button class="btn mr-2.5">
-                                Buy on XCP
+                                Buy on Opensea
                             </button>
                             <button class="outline-btn">
                                 <div class="outline-btn-text">
-                                    Buy on Opensea
+                                    Buy on XCP
                                 </div>
                             </button>
                         </div>
