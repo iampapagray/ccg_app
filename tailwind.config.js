@@ -56,8 +56,9 @@ module.exports = {
       lineHeight: {
         btn: '0.875rem',
         'twt-msg': '1.375rem',
-        'c_sub': '1.371rem',
-        'c_title': '4.5rem',
+        c_sub: '1.371rem',
+        c_title: '4.5rem',
+        c_body: '1.875rem',
       },
     },
     fontFamily: {
