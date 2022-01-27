@@ -5,11 +5,12 @@
             :key="content.subtitle"
             class="py-25 flex justify-between"
         >
-            <div class="flex-shrink-0" :class="content.ltr == false ? 'order-last' : ''">
+            <div class="flex-shrink-0" :class="content.ltr == false ? 'order-last ml-c_img_s' : 'mr-c_img_s'">
                 <img :src="content.img" class="lg:h-c_img_h lg:w-c_img_w" />
             </div>
-            <div>
-                <p>{{content.subtitle}}</p>
+            <div class="w-full text-left text-white ">
+                <p class="font-mont">{{content.subtitle}}</p>
+                <p class="font-mont">{{content.title}}</p>
             </div>
         </div>
     </div>

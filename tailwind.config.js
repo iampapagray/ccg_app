@@ -48,6 +48,7 @@ module.exports = {
         girl: '30rem',
         c_img_h: '40.625rem',
         c_img_w: '27.5rem',
+        c_img_s: '6.125rem',
       },
       fontSize: {},
       lineHeight: {
@@ -58,6 +59,7 @@ module.exports = {
     fontFamily: {
       gt: ['GT-America'],
       mont: ['Montserrat'],
+      nuni: ['Nunito'],
       sans: ['gt', 'Helvetica', 'Arial', 'sans-serif'],
     },
   },
