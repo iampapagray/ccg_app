@@ -9,8 +9,8 @@
                 <img :src="content.img" class="lg:h-c_img_h lg:w-c_img_w" />
             </div>
             <div class="w-full text-left text-white ">
-                <p class="font-mont">{{content.subtitle}}</p>
-                <p class="font-mont">{{content.title}}</p>
+                <p class="font-mont font-semibold text-lg leading-c_sub pb-3.5">{{content.subtitle}}</p>
+                <p class="font-mont font-extrabold text-c_title leading-c_title ">{{content.title}}</p>
             </div>
         </div>
     </div>

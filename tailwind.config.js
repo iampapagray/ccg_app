@@ -50,10 +50,14 @@ module.exports = {
         c_img_w: '27.5rem',
         c_img_s: '6.125rem',
       },
-      fontSize: {},
+      fontSize: {
+        c_title: '4rem',
+      },
       lineHeight: {
         btn: '0.875rem',
         'twt-msg': '1.375rem',
+        'c_sub': '1.371rem',
+        'c_title': '4.5rem',
       },
     },
     fontFamily: {
