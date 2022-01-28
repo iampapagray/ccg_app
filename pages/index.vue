@@ -4,6 +4,7 @@
   <Tweets />
   <Slider />
   <Content />
+  <Faq />
 
 </div>
 </template>

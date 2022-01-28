@@ -35,6 +35,7 @@ module.exports = {
         'btn-side': '1.563rem',
         'nav-side': '1.875rem',
         'dot-side': '0.313rem',
+        8.5: '2.125rem',
         15: '3.75rem',
         17: '4.5rem',
         25: '6.25rem',
@@ -49,6 +50,8 @@ module.exports = {
         c_img_h: '40.625rem',
         c_img_w: '27.5rem',
         c_img_s: '6.125rem',
+        faq_t: '8.438rem',
+        faq_side: '12.813rem',
       },
       fontSize: {
         c_title: '4rem',
@@ -57,8 +60,9 @@ module.exports = {
         btn: '0.875rem',
         'twt-msg': '1.375rem',
         c_sub: '1.371rem',
-        c_title: '4.5rem',
         c_body: '1.875rem',
+        faq_title: '1.688rem',
+        c_title: '4.5rem',
       },
     },
     fontFamily: {

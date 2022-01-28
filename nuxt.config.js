@@ -22,6 +22,7 @@ export default {
     { src: '~/plugins/vue-plyr', mode: 'client' },
     { src: '~/plugins/vue-video-background', mode: 'client', ssr: false },
     { src: '~/plugins/vue-tiny-slider.js', mode: 'client' },
+    { src: '~/plugins/vue-nuxt-accordion.js', mode:'client'},
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

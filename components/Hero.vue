@@ -34,8 +34,8 @@ export default {
     props: [],
     data(){
         return {
-            poster: require('@/assets/images/poster.jpeg'),
-            backvid: require('@/assets/images/background.mp4'),
+            poster: require('@/assets/images/poster.png'),
+            backvid: require('@/assets/images/preview.mp4'),
            
         }
     },
