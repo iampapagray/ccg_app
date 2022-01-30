@@ -29,8 +29,11 @@
     display: none !important;
 }
 
-.v-accordion-box.active .accordion-head {
+.v-accordion-box.active .accordion-head, .v-accordion-box .accordion-content {
     @apply mb-0;
+}
+.v-accordion-box.active .accordion-content {
+    @apply mb-5;
 }
 .v-accordion-box .accordion-head {
     @apply mb-5;
