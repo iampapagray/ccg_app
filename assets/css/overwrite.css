@@ -28,3 +28,10 @@
 .tns-outer button:first-child, .tns-outer .tns-liveregion{
     display: none !important;
 }
+
+.v-accordion-box.active .accordion-head {
+    @apply mb-0;
+}
+.v-accordion-box .accordion-head {
+    @apply mb-5;
+}
