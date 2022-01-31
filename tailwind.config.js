@@ -52,6 +52,13 @@ module.exports = {
         c_img_s: '6.125rem',
         faq_t: '8.438rem',
         faq_side: '12.813rem',
+        footer_h: '7.5rem',
+        footer_logo_w: '26rem',
+        footer_logo_h: '2.563rem',
+        footer_v: '3.813rem',
+        copy_t: '1.313rem',
+        f_link_w: '45rem',
+        f_link_t: '1.813rem',
       },
       fontSize: {
         c_title: '4rem',

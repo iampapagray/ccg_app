@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-black pt-faq_t pb-25 px-faq_side" >
+    <div id="faq" class="bg-black pt-faq_t pb-25 px-faq_side" >
         <p class="font-mont font-extrabold text-white text-c_title leading-c_title text-center pb-8.5">FAQ</p>
         <V-accordion
             v-for="faq in faqs"

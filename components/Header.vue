@@ -25,7 +25,8 @@
                             <a
                                 v-for="(nav) in navs"
                                 :key="nav.title"
-                                class=" text-sm leading-4 mr-nav-side  font-mont font-semibold text-white focus:outline-none"
+                                class=" text-sm leading-4 mr-nav-side  font-mont font-semibold text-white focus:outline-none cursor-pointer"
+                                @click="goto(nav.url)"
                             >
                                 {{nav.title}}
                             </a>
@@ -68,7 +69,7 @@ export default {
             navs: [
                 {title: "Home", url:"#", active: false},
                 {title: "About", url:"#", active: false},
-                {title: "FAQ", url:"#", active: false},
+                {title: "FAQ", url:"#faq", active: false},
             ]
         }
     },
@@ -76,6 +77,9 @@ export default {
         changeToggle () {
           this.$emit('doToggle')
         },
+         goto(url){
+
+        }
     }
 }
 </script>

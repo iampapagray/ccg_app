@@ -6,6 +6,8 @@
   <Content />
   <Faq />
 
+  <Footer />
+
 </div>
 </template>
 
