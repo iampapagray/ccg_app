@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full video-box bg-darkgray">
+    <div id="home" class="w-full video-box bg-darkgray">
         <!-- <vue-plyr>
           <div class="plyr__video-embed">
             <iframe

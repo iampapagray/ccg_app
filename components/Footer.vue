@@ -52,20 +52,24 @@ export default {
             big_logo: require('@/assets/images/big_logo.svg'),
             date: new Date().getFullYear(),
             links: [
-                {title: 'Home', url: '#'},
-                {title: 'About', url: '#'},
-                {title: 'FAQ', url: '#'},
+                {title: 'Home', url: '#home'},
+                {title: 'About', url: '#about'},
+                {title: 'FAQ', url: '#faq'},
             ],
             socials: [
-                {title: 'Twitter', img: require('@/assets/images/twitter.svg'), url:'#'},
-                {title: 'Discord', img: require('@/assets/images/discord.svg'), url:'#'},
-                {title: 'Medium', img: require('@/assets/images/medium.svg'), url:'#'},
+                {title: 'Twitter', img: require('@/assets/images/twitter.svg'), url:'https://twitter.com/CCGBTCONE' },
+                {title: 'Discord', img: require('@/assets/images/discord.svg'), url: 'https://discord.gg/ccgbtcone'},
+                {title: 'Medium', img: require('@/assets/images/medium.svg'), url: 'https://medium.com/@coin_and_peace/history-of-vintage-nfts-in-japan-the-almost-forgotten-part-of-nft-history-5f15ce50a828'},
             ]
         }
     },
     methods: {
         goto(url){
-
+            if(url.includes('https')){
+                 window.open(url, 'blank');
+             }else{
+                 this.$router.path(url)
+             }
         }
     }
 }

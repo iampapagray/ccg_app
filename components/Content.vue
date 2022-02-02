@@ -1,5 +1,5 @@
 <template>
-    <div class="lg:px-37">
+    <div id="about" class="lg:px-37">
         <div
             v-for="content in contents"
             :key="content.subtitle"
