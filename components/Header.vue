@@ -181,11 +181,13 @@ export default {
         changeToggle () {
           this.$emit('doToggle')
         },
-         goto(url){
+        goto(url){
+            // eslint-disable-next-line no-console
+            console.log(url)
              if(url.includes('https')){
                  window.open(url, 'blank');
              }else{
-                 this.$router.path(url)
+                 this.$router.push({path:url})
              }
         }
     }
