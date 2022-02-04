@@ -5,7 +5,6 @@
   <Slider />
   <Content />
   <Faq />
-
   <Footer />
 
 </div>

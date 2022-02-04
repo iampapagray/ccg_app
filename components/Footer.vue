@@ -28,7 +28,7 @@
                     <div
                         v-for="soc in socials"
                         :key="soc.title"
-                        class="cursor-pointer flex pb-5"
+                        class="cursor-pointer flex pb-5 items-center"
                         @click="goto(soc.url)"
                     >
                         <img

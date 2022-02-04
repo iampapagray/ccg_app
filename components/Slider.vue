@@ -28,7 +28,7 @@ export default {
             sliderOptions: {
                 mouseDrag: true,
                 loop: true,
-                items: this.$device.isMobile ? 1 : 4 ,
+                items: this.$device.isMobile ? 1 : this.$device.isTablet ? 2 : 4 ,
                 gutter: this.$device.isMobile ? 0 : 10,
                 slideBy: 1,
                 controls: false,

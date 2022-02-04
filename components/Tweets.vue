@@ -1,10 +1,10 @@
 <template>
     <div class=" w-full bg-black">
-        <div class="w-full flex flex-col lg:flex-row lg:justify-between px-10 lg:px-29">
+        <div class="w-full flex flex-col  md:flex-row md:justify-between px-10 lg:px-29">
             <div 
                 v-for="(tweet, i) in tweets"
                 :key="tweet.message"
-                class="lg:h-41 lg:w-82 bg-darkgray rounded px-3 lg:px-tweetside lg:mt-17 mb-8 lg:mb-16"
+                class="lg:h-41 lg:w-82 bg-darkgray rounded px-3 md:px-tweetside md:mt-17 mb-8 md:mb-16"
                 :class="i == 1 ? 'lg:pl-15 lg:pr-4 mb-24' : 'mt-24'"
             >
                 <div class="flex justify-between align-top max-w pt-4">
