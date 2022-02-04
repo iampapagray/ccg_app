@@ -1,16 +1,15 @@
 <template>
-    <div class=" max-w py-25 overflow-hidden">
+    <div class="w-full py-25 overflow-hidden">
 
-        <div>
-            <vue-tiny-slider v-bind="sliderOptions" class="flex overflow-hidden ">
+        <div class="overflow-hidden">
+            <vue-tiny-slider v-bind="sliderOptions"  class="flex overflow-hidden ">
                 <div
                     v-for="(slide, i) in slides"
                     :key="i"
                 >
-                    <img :src="slide.src" />
+                    <img :src="slide.src" class="w-full lg:w-auto" />
                 </div>
             </vue-tiny-slider>
-            
         </div>
     </div>
 </template>
@@ -29,8 +28,8 @@ export default {
             sliderOptions: {
                 mouseDrag: true,
                 loop: true,
-                items: 4,
-                gutter: 10,
+                items: this.$device.isMobile ? 1 : 4 ,
+                gutter: this.$device.isMobile ? 0 : 10,
                 slideBy: 1,
                 controls: false,
                 nav: false,

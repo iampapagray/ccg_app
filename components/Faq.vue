@@ -1,5 +1,5 @@
 <template>
-    <div id="faq" class="bg-black pt-faq_t pb-25 px-faq_side" >
+    <div id="faq" class="bg-black pt-faq_t pb-25 px-8 lg:px-faq_side" >
         <p class="font-mont font-extrabold text-white text-c_title leading-c_title text-center pb-8.5">FAQ</p>
         <V-accordion
             v-for="faq in faqs"
@@ -11,8 +11,8 @@
             </template>
             <template #content>
                 <div v-for="answer in faq.answers" :key="answer.text">
-                    <span v-if="!answer.isLink" class="text-white font-mont font-normal text-base leading whitespace-pre-wrap">{{answer.text}}</span>
-                    <a v-else :href="answer.text"  class="text-white font-mont text-base underline decoration-pink-500">{{answer.text}}</a>
+                    <span v-if="!answer.isLink" class="text-white font-mont font-normal text-base leading-8 whitespace-pre-wrap">{{answer.text}}</span>
+                    <a v-else :href="answer.text"  class="text-white font-mont text-base leading-8 underline decoration-pink-500">{{answer.text}}</a>
                 </div>
             </template>
         </V-accordion>

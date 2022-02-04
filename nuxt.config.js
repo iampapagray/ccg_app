@@ -22,7 +22,7 @@ export default {
     { src: '~/plugins/vue-plyr', mode: 'client' },
     { src: '~/plugins/vue-video-background', mode: 'client', ssr: false },
     { src: '~/plugins/vue-tiny-slider.js', mode: 'client' },
-    { src: '~/plugins/vue-nuxt-accordion.js', mode:'client'},
+    { src: '~/plugins/vue-nuxt-accordion.js', mode: 'client' },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -34,6 +34,7 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/device',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules

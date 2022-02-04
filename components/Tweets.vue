@@ -1,69 +1,71 @@
 <template>
-    <div class="lg:px-29 max-w flex justify-between bg-black">
-        <div 
-            v-for="(tweet, i) in tweets"
-            :key="tweet.message"
-            class="lg:h-41 lg:w-82 bg-darkgray rounded lg:px-tweetside mt-17 mb-16"
-            :class="[i==1,'lg:pl-tweetside2 lg:pr-tweetside']"
-        >
-            <div class="flex justify-between align-top max-w pt-4">
-                <div class="flex ">
-                    <img
-                        class="lg:h-[2.563rem] lg:w-[2.563rem] "
-                        :src="tweet.avatar"
-                        alt="avatar"
-                    />
-                    <div class="flex flex-col ml-nmside ">
-                        <div class="flex pt-nmside">
-                            <p class="font-gt text-white font-bold text-sm leading-4">{{tweet.name}}</p>
-                            <span>
-                                <img
-                                    class="pl-0.5"
-                                    :src="verified"
-                                    alt="verified"
-                                />
-                            </span>
+    <div class=" w-full bg-black">
+        <div class="w-full flex flex-col lg:flex-row lg:justify-between px-10 lg:px-29">
+            <div 
+                v-for="(tweet, i) in tweets"
+                :key="tweet.message"
+                class="lg:h-41 lg:w-82 bg-darkgray rounded px-3 lg:px-tweetside lg:mt-17 mb-8 lg:mb-16"
+                :class="i == 1 ? 'lg:pl-15 lg:pr-4 mb-24' : 'mt-24'"
+            >
+                <div class="flex justify-between align-top max-w pt-4">
+                    <div class="flex ">
+                        <img
+                            class="lg:h-[2.563rem] lg:w-[2.563rem] "
+                            :src="tweet.avatar"
+                            alt="avatar"
+                        />
+                        <div class="flex flex-col ml-nmside ">
+                            <div class="flex pt-nmside">
+                                <p class="font-gt text-white font-bold text-sm leading-4">{{tweet.name}}</p>
+                                <span>
+                                    <img
+                                        class="pl-0.5"
+                                        :src="verified"
+                                        alt="verified"
+                                    />
+                                </span>
+                            </div>
+                            <p class="font-gt text-sm font-normal leading-4 text-handlegray">{{tweet.handle}}</p>
                         </div>
-                        <p class="font-gt text-sm font-normal leading-4 text-handlegray">{{tweet.handle}}</p>
+                    </div>
+                    <div>
+                        <img
+                            class=" "
+                            :src="ellipsis"
+                            alt="menu"
+                        />
                     </div>
                 </div>
-                <div>
+
+                <div class="font-gt  text-xs leading-3 pt-3 flex">
+                    <p class="text-handlegray">Replying to</p>
+                    <span class="text-handleblue">&nbsp; {{tweet.replyTo}}</span>
+                </div>
+
+                <div class="pt-2">
+                    <p class="font-gt text-white text-lg leading-twt-msg">{{tweet.message}}</p>
+                </div>
+
+                <div class="flex text-handlegray font-gt font-normal text-xs py-4">
+                    <p>{{tweet.time}}</p>
                     <img
-                        class=" "
-                        :src="ellipsis"
-                        alt="menu"
+                        class="mx-dot-side"
+                        :src="dot"
+                        alt="dot"
                     />
+                    <p>{{tweet.date}}</p>
+                    <img
+                        class="mx-dot-side"
+                        :src="dot"
+                        alt="dot"
+                    />
+                    <p>{{tweet.device}}</p>
                 </div>
             </div>
-
-            <div class="font-gt  text-xs leading-3 pt-3 flex">
-                <p class="text-handlegray">Replying to</p>
-                <span class="text-handleblue">&nbsp; {{tweet.replyTo}}</span>
-            </div>
-
-            <div class="pt-2">
-                <p class="font-gt text-white text-lg leading-twt-msg">{{tweet.message}}</p>
-            </div>
-
-            <div class="flex text-handlegray font-gt font-normal text-xs pt-4">
-                <p>{{tweet.time}}</p>
-                <img
-                    class="mx-dot-side"
-                    :src="dot"
-                    alt="dot"
-                />
-                <p>{{tweet.date}}</p>
-                <img
-                    class="mx-dot-side"
-                    :src="dot"
-                    alt="dot"
-                />
-                <p>{{tweet.device}}</p>
-            </div>
         </div>
-        <div class="absolute tweet-container girl-position ">
+        <div class="absolute tweet-containers w-full girl-position ">
             <img
-                class="mx-auto"
+                class="mx-auto h-60 lg:h-full"
                 :src="cryptogirl"
                 alt="crypto girl"
             />

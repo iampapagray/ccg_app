@@ -1,16 +1,16 @@
 <template>
-    <div id="about" class="lg:px-37">
+    <div id="about" class="w-full overflow-hidden px-10 lg:px-37">
         <div
             v-for="content in contents"
             :key="content.subtitle"
-            class="py-25 flex justify-between"
+            class="py-25 flex flex-col lg:flex-row justify-between"
         >
-            <div class="flex-shrink-0" :class="content.ltr == false ? 'order-last ml-c_img_s' : 'mr-c_img_s'">
+            <div class="flex-shrink-0 " :class="content.ltr == false ? 'order-last mt-4 lg:mt-auto lg:ml-c_img_s' : 'mb-4 lg:mb-auto lg:mr-c_img_s'">
                 <img :src="content.img" class="lg:h-c_img_h lg:w-c_img_w" />
             </div>
             <div class="w-full h-max text-left text-white my-auto">
-                <p class="font-mont font-semibold text-lg leading-c_sub pb-3.5 ">{{content.subtitle}}</p>
-                <p class="font-mont font-extrabold text-c_title leading-c_title whitespace-pre-wrap">{{content.title}}</p>
+                <p class="font-mont font-semibold text-base lg:text-lg leading-c_sub pb-3.5 ">{{content.subtitle}}</p>
+                <p class="font-mont font-extrabold text-5xl lg:text-c_title leading-c_title whitespace-pre-wrap">{{content.title}}</p>
                 <p class="font-nuni whitespace-pre-wrap pt-3.5 font-normal text-base leading-c_body">{{content.text}}</p>
 
                 <button v-if="content.hasButton" class="btn mt-2">

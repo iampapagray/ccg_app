@@ -1,5 +1,5 @@
 <template>
-    <div class="px-footer_h py-footer_v flex justify-between">
+    <div class="px-8 lg:px-footer_h py-footer_v flex flex-col lg:flex-row justify-between">
         <div class="flex-none">
             <div class="  flex flex-col" >
                 <img
@@ -11,7 +11,7 @@
             </div>
         </div>
         <div class="grow">
-             <div class="w-f_link_w flex justify-around">
+             <div class="w-full lg:w-f_link_w mt-8 lg:mt-auto flex justify-around">
                 <div class="flex flex-col ">
                     <p class="text-white font-mont font-bold text-lg leading-twt-msg pb-f_link_t">Useful Links</p>
                     <p 
