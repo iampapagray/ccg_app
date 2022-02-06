@@ -10,7 +10,7 @@
             </div>
             <div class="w-full h-max text-left text-white my-auto">
                 <p class="font-mont font-semibold text-base lg:text-lg leading-c_sub pb-3.5 ">{{content.subtitle}}</p>
-                <p class="font-mont font-extrabold text-5xl lg:text-c_title leading-c_title whitespace-pre-wrap">{{content.title}}</p>
+                <p class="font-mont font-extrabold text-4xl lg:text-c_title leading-c_title whitespace-pre-wrap">{{content.title}}</p>
                 <p class="font-nuni whitespace-pre-wrap pt-3.5 font-normal text-base leading-c_body">{{content.text}}</p>
 
                 <button v-if="content.hasButton" class="btn mt-2">
@@ -54,7 +54,7 @@ export default {
                     ltr: false
                 },
                 {
-                    title: "What does \nit all mean?",
+                    title: this.$device.isMobile || this.$device.isTablet ? "What does it all mean?" : "What does \nit all mean?",
                     subtitle: 'CONCLUSION',
                     text: "While we can only speculate if Elon Musk owns one or not, there will be only 300 of these available at any point in time. The fact that this NFT was involved in bitcoin related posts and was minted on the bitcoin blockchain through the Counterparty protocol can’t be nothing, right?\n\nElon’s stand on NFT's in 2021 when they became mainstream is unclear, however, on March 15th 2021, he made this post with a cool art that was not minted on the blockchain by him.\n\nEven though he didn't explicitly disclose that he holds one, he did use CCGBTCONE in many posts and as his PFP, clearly proving he likes it. He could proudly own one, and in case he doesn't, we can always get him one. We all know Elon Musk posts cryptic tweets all the time, so do we believe in coincidences in this case?",
                     texts: [

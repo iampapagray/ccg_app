@@ -1,7 +1,7 @@
 <template>
     <div class="px-8 lg:px-footer_h py-footer_v flex flex-col lg:flex-row justify-between">
-        <div class="flex-none">
-            <div class="  flex flex-col" >
+        <div class="flex justify-center md:flex-none ">
+            <div class="flex flex-col justify-center" >
                 <img
                     class="w-footer_logo_w h-footer_logo_h"
                     :src="big_logo"
@@ -11,7 +11,7 @@
             </div>
         </div>
         <div class="grow">
-             <div class="w-full lg:w-f_link_w mt-8 lg:mt-auto flex justify-around">
+             <div class="w-full md:px-20 lg:px-auto lg:w-f_link_w mt-8 lg:mt-auto flex justify-between lg:justify-around">
                 <div class="flex flex-col ">
                     <p class="text-white font-mont font-bold text-lg leading-twt-msg pb-f_link_t">Useful Links</p>
                     <p 

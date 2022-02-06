@@ -63,6 +63,11 @@
     .girl-position{
         top: calc(100vh - theme('height.25') - 7.199rem);
     }
+    .fakeplay {
+        @apply h-16 w-16 rounded-full cursor-pointer bg-gradient-to-r from-light-orange to-dark-orange flex justify-center items-center absolute;
+        top: calc(50% - 2rem);
+        left: calc(50% - 2rem);
+    }
 } 
 
 /* @layer utilities {

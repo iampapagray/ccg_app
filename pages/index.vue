@@ -1,6 +1,8 @@
 <template>
-<div class="">
+<div>
+
   <Hero />
+
   <Tweets />
   <Slider />
   <Content />
@@ -11,5 +13,12 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data(){
+    return {}
+  },
+  computed: {},
+  methods: {
+  }
+}
 </script>
