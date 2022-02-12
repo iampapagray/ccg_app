@@ -1,6 +1,7 @@
 <template>
     <div id="faq" class="bg-black pt-56 pb-25 px-8 lg:px-faq_side" >
         <p class="font-mont font-extrabold text-white text-c_title leading-c_title text-center pb-8.5">FAQ</p>
+        <client-only>
         <V-accordion
             v-for="faq in faqs"
             :key="faq.question"
@@ -16,7 +17,7 @@
                 </div>
             </template>
         </V-accordion>
-       
+        </client-only>
     </div>
 </template>
 
