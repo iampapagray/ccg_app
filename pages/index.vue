@@ -2,10 +2,10 @@
 <div>
 
   <Hero />
-
   <Tweets />
   <Slider />
   <Content />
+  <News />
   <Faq />
   <Footer />
 
@@ -18,7 +18,6 @@ export default {
     return {}
   },
   computed: {},
-  methods: {
-  }
+  methods: {}
 }
 </script>

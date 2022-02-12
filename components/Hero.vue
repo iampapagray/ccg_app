@@ -5,6 +5,7 @@
             :poster="poster"
             class="video-box"
             overlay="linear-gradient(45deg,#2a4ae430,#fb949e6b)" 
+            preload
         >
             <!-- <vue-plyr v-if="showFrame" ref="plyr">
                 <div class="plyr__video-embed">

@@ -66,10 +66,10 @@ export default {
     methods: {
         goto(url){
             if(url.includes('https')){
-                 window.open(url, 'blank');
-             }else{
-                 this.$router.path(url)
-             }
+                window.open(url, 'blank');
+            }else{
+                this.$router.path(url)
+            }
         }
     }
 }
