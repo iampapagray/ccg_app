@@ -1,14 +1,14 @@
 <template>
-    <div class="bg-black px-40 pt-25 flex flex-col items-center">
-        <p class="text-white font-mont font-extrabold text-c_title leading-c_title">
+    <div class="bg-black px-4 lg:px-40 pt-25 flex flex-col items-center">
+        <p class="text-white font-mont font-extrabold text-2xl lg:text-c_title leading-c_title">
             <span class="bg-clip-text text-transparent bg-gradient-to-r from-light-orange to-dark-orange">CCGBTCONE</span> IN THE NEWS
         </p>
-        <p class="text-white font-nuni font-semibold text-base leading-c_body text-center pt-4">
+        <p class="text-white font-nuni font-semibold text-base leading-c_body text-center pt-2 lg:pt-4">
             CCGBTCONE has been featured in well-known online publications due to its historical impact and significance. 
             These articles clearly depict the great potential of this NFT collection as a historical piece as well as Elon’s interests in it over the years.
         </p>
 
-        <div class="grid grid-cols-4 gap-x-10 gap-y-16 mt-14">
+        <div class="grid grid-cols-3 lg:grid-cols-4 gap-x-10 gap-y-16 mt-14">
             <div v-for="(news, ind) in newsLogos" :key="news.url">
                 <img 
                     :src="news.src"
