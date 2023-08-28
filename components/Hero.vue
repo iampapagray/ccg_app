@@ -1,6 +1,6 @@
 <template >
     <div id="home"  class="w-full video-box bg-darkgray" >
-         <video-background 
+        <video-background 
             ref="videobackground"
             :src="backvid"
             :poster="poster"

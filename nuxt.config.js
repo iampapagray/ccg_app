@@ -19,7 +19,6 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    // { src: '~/plugins/vue-plyr', mode: 'client' },
     { src: '~/plugins/vue-video-background', mode: 'client', ssr: false },
     { src: '~/plugins/vue-tiny-slider.js', mode: 'client', ssr: false },
     { src: '~/plugins/vue-nuxt-accordion.js', mode: 'client', ssr: false },
